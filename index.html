@@ -254,7 +254,7 @@
                 container.innerHTML += `
                     <div class="product-card" onclick="openBox(${p.id})">
                         <div class="image-box">
-                            <div style="width:100%; height:100%; background-color: var(--pastel-blue);"></div>
+                            <img src="${p.img}" alt="${p.name}" style="width:100%; height:100%; object-fit:cover;">
                         </div>
                         <h3>${p.name}</h3>
                         <p style="text-align:center; color: var(--olive-green); font-weight:500;">${p.price}</p>
@@ -279,7 +279,7 @@
             }
 
             body.innerHTML = `
-                <div style="flex:1.2; height: 600px; background: var(--soft-gray); border-radius: 40px;"></div>
+                <img src="${p.img}" style="flex:1.2; height: 600px; object-fit: cover; border-radius: 40px;">
                 <div style="flex:1">
                     <h1 style="font-size: 3.5rem; color: var(--olive-green);">${p.name}</h1>
                     <p style="margin: 20px 0; color: #666; font-size: 1.1rem;">${p.desc}</p>
